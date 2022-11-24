@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio with para</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="radio" value="1" name="v">1
+        <input type="radio" value="4" name="v">4
+        <input type="radio" value="6 " name="v">6
+        <input type="radio" value="10" name="v">10
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore recusandae nesciunt, consequuntur explicabo
+            eum aspernatur voluptates temporibus neque impedit inventore, quae expedita quas facilis fuga assumenda sed
+            vero excepturi! Exercitationem!</p>
+        <p>Fuga numquam quae illum? Labore laborum minima mollitia praesentium id veritatis, neque ducimus autem
+            dignissimos maiores quo tenetur, quibusdam illum. Iure adipisci accusamus, vitae debitis at sapiente
+            exercitationem optio. Delectus?</p>
+        <p>Iste voluptatibus optio laboriosam, modi numquam cupiditate sequi ad magnam officiis, similique
+            necessitatibus quidem sit nobis distinctio debitis quia. Velit maiores, eos sunt autem obcaecati doloremque
+            a libero alias incidunt?</p>
+        <p>Assumenda voluptates sint hic quo autem voluptatibus sapiente. Necessitatibus molestias beatae aliquam
+            dolorum ullam et sunt cupiditate eaque incidunt corrupti voluptatem exercitationem nesciunt obcaecati,
+            reiciendis, dignissimos doloremque itaque, ea recusandae.</p>
+        <p>Nostrum, dignissimos dolore voluptates laboriosam architecto, hic voluptatem molestiae facilis pariatur
+            reiciendis, quibusdam quasi iure consequuntur perspiciatis sit est doloribus recusandae quisquam corrupti
+            impedit. Itaque accusamus quibusdam est dolorem recusandae.</p>
+        <p>Perspiciatis itaque adipisci, ipsa fugit non minima repudiandae, placeat totam consectetur reprehenderit vel,
+            vero officiis libero aut facilis consequuntur? Saepe quia deleniti eos perspiciatis? Dicta porro nobis eos
+            similique eius.</p>
+        <p>Fuga atque quia, veniam officiis odio quas voluptatibus nemo, omnis nesciunt quaerat sit reiciendis libero,
+            quae et laudantium eius! Quo quisquam dignissimos non officia repellendus maiores incidunt, itaque nesciunt
+            aut!</p>
+        <p>Voluptatem, dolore! Soluta, aut, quibusdam et a veniam pariatur, placeat quaerat reprehenderit architecto
+            rerum porro? Harum veniam ipsa, quisquam explicabo pariatur esse similique. Sequi aut commodi esse illo
+            iusto impedit.</p>
+        <p>Aut, soluta quidem accusamus quo debitis iusto possimus laudantium excepturi voluptates eius nihil nam
+            voluptas, rem asperiores aliquam ut consequatur consectetur temporibus numquam quaerat ipsa! Hic sit
+            quibusdam id officiis.</p>
+        <p>Quo laudantium voluptas ullam est totam voluptatibus doloremque, consequatur, tempore vitae repellendus qui
+            quos ad nesciunt quidem iusto, laborum accusamus corrupti? Harum tempora itaque, minus similique architecto
+            est optio iure.</p>
+    </div>
+
+    <script>
+        let radios = document.querySelectorAll("input")
+        let para = document.querySelectorAll("p")
+
+        for(let i=0;i<radios.length;i++){
+            radios[i].onclick =()=>{
+                //color hatao
+                for(let a=0;a<para.length;a++){
+                    para[a].style.color="#000"
+                }
+
+
+                //color lagaya
+                let tab = radios[i].value;
+                for(let j=0;j<tab;j++){
+                    para[j].style.color="red"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
